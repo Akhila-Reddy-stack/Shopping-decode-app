@@ -1,0 +1,62 @@
+@media screen and (min-width: 320px) {
+.confirm{
+    margin:2px 3px;
+}
+
+    .selpay{
+        margin-left: 10px;
+        margin-top: 13rem;
+        display: flex;
+    }
+.order-total-list{
+    margin: 7rem 18px;
+    border-radius: 8px;
+    background-color: #d3d3d385;
+    box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.26);
+}
+// .confirmtotal{
+//     font-weight: 800;
+//     font-size: 29px;
+// }
+.selpayment{
+    font-size: 22px;
+    margin-top: 9px;
+    border-radius: 8px;
+    color: white;
+    background-color: limegreen;
+    padding-top: 12px;
+    padding: 11px 12px;
+    margin-left: 33px;
+}
+ .corder-head, .ctotal-head {
+    font-size: 19px;
+    border-radius: 4px;
+    margin: 12px 8px;
+    padding: 7px 12px;
+    font-weight: 700;
+}
+.ctotal-head{
+    display:flex;
+}
+.corder-list{
+    font-size: 17px;
+ 
+}
+.sel-pr{
+    font-size:25px;
+    font-weight:800;
+}
+.selciricon{
+    color: black;
+    top: 0rem;
+    padding-left: 46px;
+    /* margin-top: -4rem; */
+    position: relative !important;
+}
+.h6fw{
+    font-size: 21px;
+}
+.Cnetamount{
+    display: flex;
+    }
+}

@@ -1,0 +1,254 @@
+.mobileresponsive {
+    display: none;
+}
+.txtcode {
+    text-align: center;
+    margin-left: 1rem;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1c4e9a;
+}
+section {
+    margin-top: -10% !important;
+    padding-top: 50% !important;
+}
+.prblm {
+    margin-top: 1rem !important;
+    margin: 0 auto;
+}
+
+.prblm-btn {
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    box-shadow: 0px 2px 7px #6c757d80;
+    border-radius: 21px !important;
+    padding: 14px 22px !important;
+}
+.location {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    margin-right: 3rem;
+    margin-left: -10rem !important;
+}
+.marmodal {
+    margin: 10px 15px;
+}
+.codeimg {
+    margin: 0 auto;
+}
+.changebtn-btn {
+    margin-left: -8rem !important;
+    border-radius: 1rem !important;
+}
+.info {
+    border-radius: 12px;
+    border: 2px solid lightgrey;
+    background-color: #d39e00a1;
+    margin: 24px 12px;
+    padding: 7px 13px;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 0.5s ease-in-out;
+    transform-origin: left top;
+}
+.linkscan {
+    text-decoration: none !important;
+}
+.pin {
+    margin-left: 10rem;
+}
+.digitpin {
+    width: fit-content !important;
+    margin: auto;
+}
+.Cancel-btn,
+.Proceed-btn {
+    border-radius: 10px;
+    padding: 8px 24px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.Cancel-btn {
+    color: black;
+    background-color: white;
+    border: 2px solid #dee2e6;
+    box-shadow: 0px 1px 10px #c7c7c7;
+}
+.Proceed-btn {
+    color: white !important;
+    border: 2px solid #1c4e9a;
+    float: right;
+    background: #1c4e9a !important;
+}
+.link-proceed {
+    color: white !important;
+}
+.Proceed-btn :hover {
+    color: white !important;
+    text-decoration: none;
+}
+.btn-btn {
+    margin: auto !important;
+}
+.blinking {
+    font-size: 20px;
+    animation: blinkingText 2s infinite;
+    font-weight: 700;
+    margin: 10px 0;
+    padding: 0 2rem;
+}
+@keyframes blinkingText {
+    0% {
+        color: rgb(175, 41, 41);
+    }
+    49% {
+        color: rgb(175, 41, 41);
+    }
+    60% {
+        color: transparent;
+    }
+    99% {
+        color: transparent;
+    }
+    100% {
+        color: rgb(175, 41, 41);
+    }
+}
+.secrow {
+    background-color: black;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+@media screen and (max-width: 1440px) {
+    section {
+        background-color: black !important;
+        width: 83% !important;
+        margin-left: 6rem;
+        margin-top: -28% !important;
+        padding-top: 50% !important;
+    }
+    .secrow {
+        background-color: black;
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    section {
+        background-color: black !important;
+        width: 83% !important;
+        margin-left: 6rem;
+        margin-top: -28% !important;
+        padding-top: 50% !important;
+    }
+    .secrow {
+        background-color: black;
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        background-color: black !important;
+        width: 103% !important;
+        margin-left: -1rem;
+        margin-top: -41% !important;
+        padding-top: 79% !important;
+    }
+    .mobileresponsive {
+        display: block !important;
+    }
+    .webresponsive {
+        display: none;
+    }
+    .qr-reader {
+        margin: 0 10px;
+    }
+    .Cancel-btn,
+    .Proceed-btn {
+        border-radius: 10px;
+        padding: 8px 24px;
+
+        font-size: 18px;
+        font-weight: 700;
+        color: white !important;
+    }
+    .Proceed-bt:hover {
+        color: white !important;
+        text-decoration: none;
+    }
+    .Cancel-btn {
+        color: black;
+        margin-left: 2rem;
+        background-color: white;
+        border: 2px solid #dee2e6;
+        box-shadow: 0px 1px 10px #c7c7c7;
+    }
+    .Proceed-btn {
+        margin-right: 2rem;
+        border: 2px solid #1c4e9a;
+        float: right;
+        background: #1c4e9a !important;
+    }
+    .info {
+        border-radius: 12px;
+        border: 2px solid lightgrey;
+        background-color: #d39e00a1;
+        margin: 24px 12px;
+        padding: 7px 13px;
+        font-size: 14px;
+        font-weight: 700;
+        transition: all 0.5s ease-in-out;
+        transform-origin: left top;
+    }
+    .btns {
+        margin-top: 4rem;
+    }
+    .txtcode {
+        margin-left: 1rem;
+        font-size: 15px;
+        font-weight: 700;
+        color: #1c4e9a;
+    }
+    .cancellink {
+        color: black;
+    }
+    .blinking {
+        font-size: 18px;
+        animation: blinkingText 2s infinite;
+        font-weight: 700;
+        margin: 10px 0;
+        padding: 0 2rem;
+    }
+    @keyframes blinkingText {
+        0% {
+            color: rgb(175, 41, 41);
+        }
+        49% {
+            color: rgb(175, 41, 41);
+        }
+        60% {
+            color: transparent;
+        }
+        99% {
+            color: transparent;
+        }
+        100% {
+            color: rgb(175, 41, 41);
+        }
+    }
+}
+@media only screen and (max-width: 320px) {
+    .btns {
+        margin-top: 1rem;
+    }
+    .info {
+        margin: 0;
+    }
+    .txtcode {
+        margin-left: 0rem;
+        font-size: 14px;
+    }
+}

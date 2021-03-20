@@ -1,0 +1,259 @@
+body {
+    font-family: "Cabin", sans-serif;
+}
+
+.shopping-cart {
+    // padding: 0px 20px;
+    margin-bottom: 3rem;
+}
+
+.place {
+    margin-top: -2rem;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 700;
+
+}
+.userdetails {
+    border: none !important;
+    box-shadow: 0px 2px 7px #6c757d80;
+}
+
+.OnlineShopping {
+    background-color: #ffffff;
+    max-width: 100%;
+    border-radius: 2rem;
+}
+.shoppingCart {
+    color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    margin-left: -4px;
+}
+.shoptxt {
+    padding: 6px 25px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #0062cc;
+}
+.marRight {
+    color: black;
+    margin-right: 2rem;
+    font-size: 1.5rem !important;
+}
+.shopping-lefticon {
+    float: left;
+}
+.headerIcon {
+    width: 25%;
+}
+.carousel-indicators {
+opacity:0;
+}
+.shopping-righticon {
+    position: absolute;
+    float: right;
+    left: 62.5rem;
+}
+.cartlink{
+    color:black;
+}
+.reader {
+    display: flex;
+    margin: 1.5rem 12rem;
+}
+.scanimg {
+    margin-left: 5rem;
+    width: 25%;
+}
+.or,
+.enterinput {
+    margin: auto;
+}
+.or {
+    padding-left: 7rem !important;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.Scan-QR :active {
+    outline: none;
+}
+.Scan-QR {
+    display: inline-block;
+    padding: 0.5rem 2rem !important;
+    margin-top: 10px;
+    margin-left: 3rem;
+    border-radius: 3rem;
+    color: #fff !important;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #1c4e9a !important;
+        border-radius: 3rem;
+        z-index: -2;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background: #00f1d14a;
+        transition: all 0.2s;
+        border-radius: 3rem;
+        z-index: -1;
+    }
+    &:hover {
+        color: #fff;
+        &:before {
+            width: 100%;
+        }
+    }
+}
+
+.link {
+    color: white !important;
+    text-decoration: none !important;
+}
+.bannerimg1,
+.bannerimg2,
+.bannerimg3,
+.bannerimg4 {
+  margin-top:-1rem;
+    width: 240vh;
+    height: 62vh;
+}
+.carousel-center {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+@media screen and (max-width: 1280px) {
+    .shopping-righticon {
+        left: 58rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .marRight {
+        margin-right: 1rem;
+        font-size: 1.2rem !important;
+    }
+    // .headerIcon {
+    //     width: 25% !important;
+    //     margin-left: 1rem !important;
+    // }
+    // .menubar {
+    //     font-size: 1.2rem !important;
+    // }
+    .shopping-righticon {
+        position: absolute;
+        float: right;
+        left: 58rem;
+    }
+    .place {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .shopping-righticon {
+        display: inline-table;
+        left: 13rem;
+    }
+    .bannerimg1,
+    .bannerimg2,
+    .bannerimg3,
+    .bannerimg4 {
+        width: 80vh !important;
+        height: 39vh;
+    }
+    .carousel-center {
+        font-size: 1.8rem;
+    }
+    .reader {
+        display: inline-table;
+        margin: 29px 33px 5px 48px;
+    }
+    .Scan-QR {
+        padding: 0.6rem 1.5rem !important;
+        margin-left: 5rem;
+    }
+    .userdetails {
+        margin-top: 1rem;
+        font-size: 19px;
+        padding: 1.5rem 2.5rem !important;
+        margin-bottom: 1rem;
+    }
+    .scanimg {
+        margin-left: 6rem;
+    }
+    .or {
+        padding-left: 8rem !important;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .carousel-inner {
+        width: 114% !important;
+    }
+    .carousel-control.right:hover,
+    .carousel-control-next:hover {
+        background: none !important;
+    }
+    // .user-head {
+    //     margin-right: -13rem !important;
+    // }
+    .nav-icon {
+        margin-left: 2rem !important;
+    }
+}
+// @media screen and (max-width: 1024px) {
+//     .shopping-righticon {
+//         left: 35rem !important;
+//     }
+//     .headerIcon {
+//         width: 17% !important;
+//         margin-left: 6rem !important;
+//     }
+//     .bannerimg1,
+//     .bannerimg2,
+//     .bannerimg3,
+//     .bannerimg4 {
+//         width: 100vh !important;
+//         height: 50vh !important;
+//     }
+//     .Scan-QR {
+//         padding: 1rem 1.5rem !important;
+//         margin-left: 4rem;
+//         font-size: 1.5rem !important;
+//     }
+
+//     .scanimg {
+//         margin-left: 3rem;
+//         width: 15vh;
+//     }
+
+//     .reader {
+//         display: flex;
+//     }
+//     .userdetails {
+//         width: 23vh;
+//     }
+
+//     .side-nav .close-nav {
+//         right: 20rem !important;
+//     }
+// }

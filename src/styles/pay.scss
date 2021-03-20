@@ -1,0 +1,78 @@
+@media screen and (max-width: 768px) {
+    .payy {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .pay-header {
+        text-align: center;
+    }
+    .pay-wrap-details {
+        color: black;
+    }
+    .pay-wrap {
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 26px;
+        color: white;
+    }
+    .pay-headclr {
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #abe849;
+        padding-bottom: 10px;
+    }
+    .pay-detailsclr {
+        padding: 0px 18px;
+        padding-top: 23px;
+        background-color: lightgray;
+        padding-bottom: 4rem;
+    }
+    .personimg {
+        width: 3vh;
+    }
+    .prefer-list {
+        font-size: 18px;
+        font-weight: 600;
+        padding-top: 15px;
+    }
+    .pay-list {
+        padding-top: 15px;
+    }
+    .form-wrap {
+        height: 8vh;
+        max-height: 16vh;
+    }
+    .payment-name {
+        padding-left: 15px;
+    }
+    .preferred {
+        height: 6vh;
+        padding-top: 15px;
+    }
+    .payy-name {
+        margin-left: 30px;
+    }
+    .payimg {
+        width: 8vh;
+    }
+    .pay-flex {
+        display: flex;
+    }
+    .payphoneimg {
+        width: 20vh;
+    }
+    .personupiimg {
+        width: 8vh;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .payment {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .payment {
+        display: block;
+    }
+}

@@ -1,0 +1,102 @@
+@media screen and (min-width: 320px) {
+    .Profile {
+        padding: 1px 35px;
+    }
+    .cart-icon {
+        float: right;
+    }
+    .pro-add {
+        border-radius: 9px;
+        padding: 15px 15px;
+        background-color: #d3d3d35e;
+
+        box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.26);
+    }
+
+    .pro-add-details {
+        font-size: 18px;
+    }
+
+    .profile-nav1 {
+        right: -3rem;
+        font-weight: 600;
+        margin-left: 4rem;
+        font-size: 25px;
+        position: relative;
+    }
+    .editicon {
+        font-size: 19px !important;
+        color: orange;
+    }
+    .accountcircle {
+        width: 34% !important;
+        position: absolute;
+        top: 2.2rem;
+        max-height: 40vh;
+        height: 11vh !important;
+        margin-left: -15px;
+    }
+    .editt {
+        margin-right: 5rem;
+        left: -1rem;
+        /* position: relative; */
+        font-weight: 600;
+        font-size: 13px;
+        float: right;
+    }
+    .profile-name {
+        margin-top: 10px;
+    }
+    .poo-row {
+        width: 111%;
+        background-color: #d3d3d35e;
+        border-radius: 9px;
+        box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.26);
+        margin-bottom: 1rem;
+    }
+    .edit-details {
+        font-weight: 600;
+    }
+    .pro-add-home {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .returns {
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: 9px;
+        margin-left: 4rem;
+    }
+    .profile-cart {
+        margin-top: 2rem;
+        width: 45%;
+
+        margin-left: 4rem;
+    }
+    .profile-pro,
+    .profile-delete,
+    .profile-default {
+        border-radius: 9px;
+        background-color: white;
+        font-size: 13px;
+        margin-right: 8px;
+        font-weight: 700;
+        box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.26);
+    }
+    .cart-top {
+        margin-top: 21px;
+        background-color: #d3d3d391;
+    }
+    .log-icon {
+        float: right;
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .Profile {
+        padding: 1px 35px;
+    }
+}

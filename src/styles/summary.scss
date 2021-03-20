@@ -1,0 +1,116 @@
+@media screen and (min-width: 320px) {
+    .bookingsummary {
+        
+        margin: -13px 3px;
+    }
+    .show-head {
+        margin-top: 1rem;
+    }
+    .showId,
+    .showpur {
+        text-align: center;
+    }
+    .showId {
+        margin-left: 1rem;
+        margin-top: 24px;
+        border-radius: 8px;
+        padding: 11px 43px;
+        background-color: yellow;
+    }
+    .showpur {
+        border-radius: 8px;
+        font-size: 13px;
+        margin: 18px 92px;
+
+        background-color: #fff3cd;
+        padding: 9px -5px;
+        padding: 9px 16px;
+    }
+    .items {
+        background-color: #4950572b;
+        padding: 2px 14px;
+        font-weight: 700;
+        font-size: 16px;
+        border-radius: 4px;
+        margin: -13px 6px 3px;
+    }
+    .bookoSum {
+        background-color: #e9ecef;
+        margin: 12px 8px;
+        padding: 7px 12px;
+        font-weight: 700;
+        /* font-size: 18px; */
+        border-radius: 4px;
+    }
+    .items-rr {
+        text-align: right;
+    }
+    .details-head,
+    .order-head,
+    .total-head {
+        background-color: #e9ecef;
+        border-radius: 4px;
+        margin: 12px 8px;
+        padding: 7px 12px;
+        font-weight: 700;
+    }
+    .order-sumry,
+    .details-sumry,
+    .total-sumry {
+        float: right;
+
+        margin-left: auto;
+    }
+    .order-list,
+    .details-list {
+        font-weight: 700;
+    }
+    .details-list-head,
+    .order-list-head,
+    .total-head {
+        display: flex;
+    }
+    .summary-head {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .order-head,
+    .total-head {
+        margin-top: 1rem;
+    }
+    .h5fw {
+        font-weight: 900;
+    }
+    // summary styles
+
+    .img-checked {
+        width: 10%;
+        height: 10%;
+    }
+    .qrcode {
+        margin-left: 12px;
+        width: 10% !important;
+        height: 10% !important;
+    }
+    .qr-success {
+        text-align: center;
+    }
+    .qrid {
+        margin-top: 6px;
+        margin-left: 4rem;
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    .bookingsummary{
+        display:none;
+    }
+    }
+    
+@media screen and (max-width: 768px) {
+    .bookingsummary{
+        display:block;
+    }
+    }

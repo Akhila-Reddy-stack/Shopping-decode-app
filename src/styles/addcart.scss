@@ -1,0 +1,444 @@
+.shopping-header {
+    border-bottom: 1px solid #c7c7c7;
+    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.mrselect {
+    margin-left: 5px;
+}
+.cartconfirm {
+    display: flex;
+    // border: 2px solid lightgrey;
+    box-shadow: 0 4px 8px 0 #272c3191;
+    border-bottom: 1px solid #c7c7c7;
+    background-color: #e9ecefb3;
+    padding: 11px 9px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.cartt {
+    margin-left: 1rem;
+    // margin-top: 4rem;
+    font-size: 27px;
+    font-weight: 700;
+}
+.summary {
+    position: fixed;
+    right: 7px;
+    top: 21px;
+    margin-top: 2rem;
+    box-shadow: 0 10px 10px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    // border: 3px solid lightgrey;
+}
+
+.item-details {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #e9ecefb3;
+    // font-weight: 700;
+}
+.addlisted {
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.minusbtn,
+.plusbtn {
+    font-size: 22px;
+    font-weight: 700;
+    border: 2px solid lightgrey;
+    margin: 0 0.4rem;
+    padding: 3px 11px;
+    border-radius: 5px;
+    color: #292b2c;
+    background-color: #f8f9fa;
+}
+.bg {
+    border-radius: 5px;
+    padding: 6px 16px;
+    background-color: white;
+}
+.status {
+    margin-top: 2rem;
+    margin-left: 6rem;
+}
+.price {
+    font-weight: 700;
+}
+.mar {
+    margin-right: 1rem;
+    padding-top: 10px;
+}
+.off {
+    color: red;
+}
+.summary {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: -1.4rem;
+}
+.vocher {
+    display: flex;
+    padding: 0.5rem 2rem;
+    margin-bottom: 1rem;
+    background-color: lightgrey;
+    margin-top: 1rem;
+    margin-left: 0rem;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 0rem;
+}
+.fileicon {
+    padding-left: 2rem;
+    padding-top: 0rem;
+}
+.drive {
+    width: 13vh !important;
+    height: 10vh !important;
+}
+.youcart {
+    margin-left: 2rem;
+}
+.item {
+    padding-left: 6rem;
+    padding-top: 2rem;
+}
+.rating {
+    padding: 0 3rem;
+}
+.ratingstar {
+    text-align: center;
+    border-radius: 5px;
+    background-color: #6c757d99;
+}
+.pdt {
+    padding-top: 3px;
+    padding-left: 1rem;
+}
+.rating-div {
+    margin: 2rem 0rem;
+}
+.inc-dec-num {
+    font-size: 21px;
+}
+.order {
+    padding: 5px 30px;
+}
+.order-sum {
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.orderbt {
+    display: flex;
+    margin-left: 28px;
+    border-bottom: 2px solid lightgrey;
+}
+
+.pricelist {
+    padding-left: 7rem;
+}
+.mb {
+    margin-bottom: 1rem;
+}
+
+.save {
+    font-size: 19px;
+    font-weight: 700;
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    padding: 0.8rem 2rem;
+    background-color: #6c757da1;
+}
+.checkout {
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-right: 1rem;
+    margin-top: -3rem;
+    margin-left: 11rem;
+    background-color: green;
+}
+.pp {
+    font-size: 21px;
+    font-weight: 700;
+}
+.view {
+    color: blue;
+    cursor: pointer;
+}
+.saved-details {
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+.checkicon {
+    color: white;
+    margin-left: 7rem;
+    position: absolute;
+    left: 18rem;
+    top: -2.5rem;
+    bottom: 3rem;
+}
+.deleteicon {
+    cursor: pointer;
+}
+.nexticon {
+    margin-top: -0.3rem;
+    margin-right: 4rem;
+    margin-bottom: 10px;
+}
+/*************************MODAL STYLES**********/
+
+.deletemodal {
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 1rem 2rem;
+}
+.remove {
+    color: red;
+    text-align: center;
+    margin: 1rem 0rem;
+}
+.remove-btn {
+    margin-left: 2rem;
+    background-color: lightpink;
+    border: 2px solid lightpink;
+    color: black;
+}
+.remove-btn :hover {
+    background-color: red;
+    border: 2px solid red;
+    color: black;
+}
+.del-cancel-btn {
+    background-color: rgb(155, 143, 145);
+    border: 2px solid rgb(155, 143, 145);
+}
+.del-cancel-btn:hover {
+    background-color: rgb(241, 234, 235);
+    border: 2px solid rgb(241, 234, 235);
+}
+.mod-item-name {
+    text-align: center;
+}
+.removebtns {
+    margin: 2rem 0rem;
+}
+.react-responsive-modal-modal {
+    border-radius: 1rem !important;
+}
+
+.addbookoSum {
+    background-color: #e9ecef;
+    // margin: 12px 8px;
+    // padding: 7px 12px;
+    font-weight: 700;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 #00000033; /* font-size: 18px; */
+    border-radius: 4px;
+}
+.addorder-details-list {
+    font-size: 15px;
+    margin-top: 1.2rem;
+    font-weight: 700;
+}
+.cartlisted {
+    margin-left: 5rem;
+}
+.checkedradio {
+    margin-top: 4px;
+    margin-left: 2px;
+}
+.horizontal_dotted_line {
+    border-top: 3px dotted #212529;
+    width: 32px;
+    margin-left: 5px;
+    margin-top: 10px;
+    // margin-bottom: 13rem;
+}
+.cartinfo {
+    // top: 1rem;
+    position: relative;
+}
+@media screen and (max-width: 1440px) {
+    // .cart-details {
+    //     padding: 1.5rem 3rem;
+    // }
+    .summary {
+        margin-top: 6rem;
+    }
+    .cartnav {
+        margin-left: 2rem;
+    }
+    .horizontal_dotted_line {
+        width: 81px;
+        margin-left: 11px;
+    }
+    .cartlisted {
+        margin-left: 7rem;
+    }
+    .cart-qty {
+        margin-left: 7rem;
+    }
+    .drive {
+        position: relative;
+        top: 3rem;
+    }
+    .btn-cartbtn {
+        margin-left: 10rem;
+    }
+}
+.youremptycart {
+    color: #6c757de8;
+    font-weight: 600;
+    font-size: 28px;
+    padding-top: 5rem;
+    text-align: center;
+}
+.btn-cartbtn {
+    display: flex;
+}
+@media screen and (max-width: 768px) {
+    .summary {
+        position: initial;
+        margin-left: -2px;
+
+        // width: 88%;
+    }
+    .btn-cartbtn {
+        margin-left: 0 !important;
+    }
+    .horizontal_dotted_line {
+        width: 35px;
+        margin-left: 1px;
+    }
+    .cart-qty {
+        margin-left: 5rem;
+    }
+    // .addbookoSum {
+    //     margin: 12px 23px;
+    //     padding: 12px 0px;
+    // }
+    .react-responsive-modal-modal {
+        width: 52vh;
+        margin-left: -1rem;
+    }
+    .checkcart {
+        margin-left: -7px;
+    }
+    .remove-item {
+        left: -1.6rem;
+        position: relative;
+        font-size: 20px;
+        width: 43vh;
+        text-align: center;
+    }
+    .infocircle {
+        top: 1rem;
+        position: relative;
+    }
+    .drive {
+        top: 1rem;
+        position: relative;
+    }
+    .yourcart-head {
+        display: none;
+    }
+    .cartt {
+        margin-left: 2rem;
+        // margin-top: 1rem;
+    }
+    .cart-details {
+        padding: 0rem;
+    }
+    .radiomargin {
+        display: flex;
+    }
+    .cartinfo {
+        top: 1rem;
+    }
+    .cartconfirm {
+        // width: 83%;
+        padding: 4px 0px;
+    }
+    .pdt {
+        position: relative;
+        // padding-top: -19px;
+        padding-left: 2rem;
+        // top: -1rem;
+    }
+    .addbookoSum {
+        background-color: #e9ecef;
+        // margin: 12px 8px;
+        // padding: 7px 12px;
+        font-weight: 700;
+        /* font-size: 18px; */
+        border-radius: 4px;
+    }
+    .cartnav {
+        margin: 0px 15px 0px 26px;
+    }
+    .drive {
+        width: 10vh !important;
+        height: 7vh !important;
+    }
+    // .addbookoSum {
+    //     margin: 12px 34px;
+    //     padding: 13px 2px;
+    // }
+    .addorder-details-list {
+        font-size: 15px;
+        margin-top: 3rem;
+        font-weight: 700;
+    }
+    // .cartlisted {
+    //     margin-left: 4rem;
+    // }
+    .status {
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+    .multiplecart {
+        display: none;
+    }
+    .save {
+        margin-right: 0rem;
+        margin-left: 0rem;
+        // padding: 0.8rem 2.4rem;
+    }
+    .nexticon {
+        left: 38px;
+        top: 6px;
+        position: relative;
+        margin-right: 0rem !important;
+    }
+    .saved-details {
+        margin-left: 0rem;
+    }
+    .checkout {
+        margin-left: 7.5rem;
+    }
+    .vocher {
+        padding: 0.5rem 1rem !important;
+    }
+    .order {
+        padding: 5px 0px;
+    }
+    .colcart {
+        padding-left: 27px;
+    }
+}
+@media screen and (min-width: 320px) {
+    // .confirm {
+    //     margin: 0px 37px !important;
+    // }
+}
+
+

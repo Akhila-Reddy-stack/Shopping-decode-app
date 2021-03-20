@@ -1,0 +1,99 @@
+@media screen and (min-width: 320px) {
+    .orders{
+        
+    margin: 1px 6px;
+
+        background-color: #d3d3d329;
+    }
+.orderssize{
+    font-size: 22px;
+    font-weight: 700;
+}
+.order-col{
+    
+    padding: 10px 1px;
+    background-color: white;
+}
+.store{
+    margin-top: 1rem;
+    background-color: white;
+    padding: 21px 21px;
+}
+.st,.mon{
+    border-radius: 8px;
+    box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.26);
+ 
+    font-size: 22px;
+    background-color: #e9ecef78;
+    font-weight: 700;
+    padding: 9px 15px;
+}
+.mon{
+    
+    margin-left: 5rem;
+
+}
+.orderid{
+    padding: 14px 3px;
+    font-size: 18px;
+    background-color: #e9ecef78;
+}
+.ids{
+    font-weight:700;
+}
+.date{
+    font-size: 18px;
+    margin-left: 6rem;
+    font-weight: 500;
+}
+.scan-header{
+    border-radius: 4px;
+    margin-top: 1rem;
+    background-color:#e9ecef78;
+    padding: 13px 12px;
+}
+.purday{
+   
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 1rem;
+
+}
+.payorder{
+    color: #007bff;
+    font-size: 18px;
+    margin-left: 8rem;
+    font-weight: 500;
+}
+.scann
+{
+    font-size: 18px;
+ 
+    font-weight: 500;
+}
+.order-details-list{
+    font-size: 14px;
+    margin-top: 3rem;
+    font-weight: 600;
+}
+.qty{
+
+    font-weight:800;
+}
+.pr{
+    text-align: right;
+    padding-left: 4rem;
+}
+.listed{
+    margin-left: 2rem;
+}
+.orderright{
+    float: right;
+    position: inherit;
+    color: black;
+    font-size: 22px;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+}
