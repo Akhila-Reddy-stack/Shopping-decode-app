@@ -5,30 +5,29 @@
     .cart-icon {
         float: right;
     }
-    .pro-add {
+    .pro-add{
         border-radius: 9px;
         padding: 15px 15px;
         background-color: #d3d3d35e;
-
-        box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.26);
+    
+          box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.26);
     }
-
-    .pro-add-details {
+    
+    .pro-add-details{
         font-size: 18px;
     }
-
-    .profile-nav1 {
+    .profile-nav1{
         right: -3rem;
-        font-weight: 600;
-        margin-left: 4rem;
-        font-size: 25px;
-        position: relative;
+    font-weight: 600;
+    margin-left: 4rem;
+    font-size: 25px;
+    position: relative;
     }
-    .editicon {
+    .editicon{
         font-size: 19px !important;
-        color: orange;
+        color:orange;
     }
-    .accountcircle {
+    .accountcircle{
         width: 34% !important;
         position: absolute;
         top: 2.2rem;
@@ -36,7 +35,7 @@
         height: 11vh !important;
         margin-left: -15px;
     }
-    .editt {
+    .editt{
         margin-right: 5rem;
         left: -1rem;
         /* position: relative; */
@@ -44,54 +43,52 @@
         font-size: 13px;
         float: right;
     }
-    .profile-name {
+    .profile-name{
         margin-top: 10px;
     }
-    .poo-row {
+    .poo-row{
         width: 111%;
         background-color: #d3d3d35e;
         border-radius: 9px;
         box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.26);
-        margin-bottom: 1rem;
+        margin-bottom:1rem;
     }
-    .edit-details {
-        font-weight: 600;
+    .edit-details{
+        font-weight:600;
     }
-    .pro-add-home {
+    .pro-add-home{
         font-size: 20px;
         font-weight: 700;
     }
-    .returns {
+    .returns{
         font-size: 25px;
         font-weight: 600;
         margin-top: 10px;
         margin-bottom: 9px;
         margin-left: 4rem;
     }
-    .profile-cart {
+    .profile-cart{
         margin-top: 2rem;
         width: 45%;
-
+       
         margin-left: 4rem;
     }
-    .profile-pro,
-    .profile-delete,
-    .profile-default {
+    .profile-pro,.profile-delete,.profile-default{
         border-radius: 9px;
         background-color: white;
-        font-size: 13px;
-        margin-right: 8px;
+    font-size: 13px;
+    margin-right: 8px;
         font-weight: 700;
-        box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.26);
+          box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.26);
     }
-    .cart-top {
+    .cart-top{
         margin-top: 21px;
         background-color: #d3d3d391;
     }
-    .log-icon {
-        float: right;
+    .log-icon{
+        float:right;
         font-weight: 600;
-        font-size: 20px;
+    font-size: 20px;
     }
 }
 

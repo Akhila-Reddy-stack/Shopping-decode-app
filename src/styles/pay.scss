@@ -49,30 +49,30 @@
         height: 6vh;
         padding-top: 15px;
     }
-    .payy-name {
-        margin-left: 30px;
+    .payy-name{
+        margin-left:30px;
     }
-    .payimg {
-        width: 8vh;
+    .payimg{
+        width:8vh;
     }
-    .pay-flex {
+    .pay-flex{
         display: flex;
     }
-    .payphoneimg {
-        width: 20vh;
+    .payphoneimg{
+        width:20vh;
     }
-    .personupiimg {
-        width: 8vh;
+    .personupiimg{
+        width:8vh;
     }
 }
 
 @media screen and (max-width: 1440px) {
-    .payment {
-        display: none;
+    .payment{
+        display:none;
     }
-}
-@media screen and (max-width: 768px) {
-    .payment {
-        display: block;
     }
-}
+    @media screen and (max-width: 768px) {
+        .payment{
+            display:block;
+        }
+        }

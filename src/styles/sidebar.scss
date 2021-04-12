@@ -118,7 +118,9 @@ body {
   float: right;
   font-size: 14px;
 }
-
+// .user-head {
+//   margin-right: -12rem;
+// }
 .card-list {
   display: flow-root !important;
   width: 84%;
@@ -178,6 +180,10 @@ body {
   color: red;
 }
 @media only screen and (max-width: 768px) {
+  .carouselimg {
+    height: 47vh;
+    width: 56vh;
+}
   .side-nav {
     width: 99%;
   }
@@ -191,8 +197,8 @@ body {
     width: 72%;
   }
   .headerIcon {
-    margin-top: -4rem;
-    width: 112% !important;
+    margin-top: -52px;
+    width: 141% !important;
     margin-left: 1rem !important;
   }
   .card-header {
@@ -213,10 +219,11 @@ body {
   .menubar {
     margin-top: 14px;
     margin-left: -33px;
-    font-size: 28px !important;
+    font-size: 32px !important;
   }
   .navimguser {
     margin-left: -5rem;
+  
   }
   // .mystyle {
   //   width: 57% !important;
@@ -228,9 +235,10 @@ body {
   }
 }
 .mystyle {
-  width: max-content !important;
-  height: max-content !important;
+  width:max-content !important;
+  height: max-content!important;
   box-shadow: 0 7px 14px #03458b;
+
 }
 @media only screen and (max-width: 480px) {
   .side-nav-item {
@@ -241,6 +249,7 @@ body {
   // .overlay {
   //   height: 51% !important;
   // }
+ 
   .overlay {
     height: 64%;
     width: 0;
@@ -329,6 +338,7 @@ body {
     left: 20rem;
   }
 }
+
 
 .overlay {
   height: 64%;

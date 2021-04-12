@@ -6,7 +6,18 @@ body {
     // padding: 0px 20px;
     margin-bottom: 3rem;
 }
-
+.carouselimg{
+    height: 62vh;
+    width: 250vh;
+}
+.scanpay{
+    position: absolute;
+    top: 20rem;
+    left: 1rem;
+    color: white;
+    font-size: 27px;
+    font-weight: 800;
+}
 .place {
     margin-top: -2rem;
     margin-left: 5px;
@@ -149,6 +160,11 @@ opacity:0;
 }
 
 @media screen and (max-width: 768px) {
+    .scanpay {
+     
+        top: 12rem;
+
+    }
     .marRight {
         margin-right: 1rem;
         font-size: 1.2rem !important;
@@ -185,7 +201,7 @@ opacity:0;
     }
     .reader {
         display: inline-table;
-        margin: 29px 33px 5px 48px;
+        margin: 29px 56px 5px 48px;
     }
     .Scan-QR {
         padding: 0.6rem 1.5rem !important;

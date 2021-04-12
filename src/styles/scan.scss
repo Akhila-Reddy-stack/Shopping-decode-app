@@ -9,7 +9,7 @@
     color: #1c4e9a;
 }
 section {
-    margin-top: -10% !important;
+    margin-top: -10%!important;
     padding-top: 50% !important;
 }
 .prblm {
@@ -51,7 +51,7 @@ section {
     transition: all 0.5s ease-in-out;
     transform-origin: left top;
 }
-.linkscan {
+.linkscan{
     text-decoration: none !important;
 }
 .pin {
@@ -75,17 +75,18 @@ section {
     box-shadow: 0px 1px 10px #c7c7c7;
 }
 .Proceed-btn {
-    color: white !important;
+    color:white!important;
     border: 2px solid #1c4e9a;
     float: right;
     background: #1c4e9a !important;
 }
-.link-proceed {
-    color: white !important;
+.link-proceed{
+    color:white!important;
 }
-.Proceed-btn :hover {
-    color: white !important;
+.Proceed-btn :hover{
+    color:white!important;
     text-decoration: none;
+
 }
 .btn-btn {
     margin: auto !important;
@@ -114,7 +115,7 @@ section {
         color: rgb(175, 41, 41);
     }
 }
-.secrow {
+.secrow{
     background-color: black;
     margin-top: -1rem;
     margin-bottom: 1rem;
@@ -124,10 +125,10 @@ section {
         background-color: black !important;
         width: 83% !important;
         margin-left: 6rem;
-        margin-top: -28% !important;
+        margin-top: -28%!important;
         padding-top: 50% !important;
     }
-    .secrow {
+    .secrow{
         background-color: black;
         margin-top: -1rem;
         margin-bottom: 1rem;
@@ -136,13 +137,13 @@ section {
 
 @media screen and (max-width: 1280px) {
     section {
-        background-color: black !important;
+        background-color: black!important;
         width: 83% !important;
         margin-left: 6rem;
-        margin-top: -28% !important;
+        margin-top: -28%!important;
         padding-top: 50% !important;
     }
-    .secrow {
+    .secrow{
         background-color: black;
         margin-top: -1rem;
         margin-bottom: 1rem;
@@ -170,13 +171,13 @@ section {
     .Proceed-btn {
         border-radius: 10px;
         padding: 8px 24px;
-
+     
         font-size: 18px;
         font-weight: 700;
-        color: white !important;
+        color:white !important;
     }
     .Proceed-bt:hover {
-        color: white !important;
+        color:white !important;
         text-decoration: none;
     }
     .Cancel-btn {
