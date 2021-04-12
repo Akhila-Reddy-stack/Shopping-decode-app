@@ -11,6 +11,7 @@ import {
 import UserHome from "./Pages/User/UserHome";
 import Scan from "./Pages/User/Scan";
 import Cart from "./Pages/User/Cart";
+// import AddtoCart from "./Pages/User/AddCart";
 import AddtoBag from "./Pages/User/AddtoBag";
 import Profile from "./Pages/User/Profile";
 import EditProfile from "./Pages/User/EditProfile";
@@ -31,6 +32,7 @@ function App(props) {
             <Route path="/user/home" component={UserHome} />
             <Route path="/scan" component={Scan} />
             <Route path="/cart" component={Cart} />
+            {/* <Route path='/addcart' component={AddtoCart} /> */}
             <Route path="/addtobag" component={AddtoBag} />
             <Route path="/userProfile" component={Profile} />
             <Route path="/editProfile" component={EditProfile} />

@@ -1,32 +1,31 @@
 .App {
   background-color: white;
-  margin: 0;
-  padding: 0;
+  margin:0;
+  padding:0;
   font-family: "Cabin", sans-serif;
+
 }
 
-body {
+body{
   overflow-x: hidden;
 }
-.wrapper {
+.wrapper{
   // overflow: hidden;
   // overflow-y: hidden;
   // overflow-x: hidden;
   scroll-behavior: smooth;
   height: 100vh;
-  padding-top: 10px;
+  padding-top:10px;
 }
-.invalid-field {
+.invalid-field{
   color: red;
   font-size: 14pxs;
 }
 
-.fa,
-.fas,
-.far {
-  font-weight: 900;
-  color: #0268ba;
-  padding: 5px;
+.fa, .fas, .far {
+    font-weight: 900;
+    color: #0268ba;
+    padding: 5px;
 }
 
 ::-webkit-scrollbar {
@@ -35,20 +34,24 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f1f1f1; 
 }
-
+ 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(136, 136, 136);
+  background: rgb(136, 136, 136); 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #555; 
 }
 @media screen and (min-width: 1280px) {
+  
 }
 
 @media screen and (min-width: 1440px) {
+  
 }
+
+
