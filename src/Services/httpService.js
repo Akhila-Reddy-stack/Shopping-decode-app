@@ -18,6 +18,7 @@ function setJwt(jwt) {
   axios.defaults.headers.common["Authorization"] = "Bearer " + jwt;
 }
 
+
 export default {
   get: axios.get,
   post: axios.post,
