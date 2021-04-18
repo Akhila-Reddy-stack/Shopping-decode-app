@@ -1,8 +1,8 @@
 import http from './httpService';
-import { apiUrl1 } from "../config.json";
+import { apiUrl } from "../config.json";
 
 export const getItemList = () => {
-  const apiEndPoint = `${apiUrl1}/getQRlist`;
+  const apiEndPoint = `${apiUrl}/getQRlist`;
   return http.get(`${apiEndPoint}`)
 }
 
@@ -13,7 +13,8 @@ export const getItemList = () => {
 // }
 export function getItemByItemNumber(data) {
   console.log(data);
-  const apiEndPoint = `${apiUrl1}/getQRlistbyItemNumber?ItemNumber=${data.ItemNumber}`;
+  const apiEndPoint = `${apiUrl}/getQRlistbyItemNumber?ItemNumber=${data.ItemNumber}`;
+  console.log(apiEndPoint)
   return http.get(`${apiEndPoint}`, data);
 }
 
