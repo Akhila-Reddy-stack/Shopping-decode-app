@@ -36,6 +36,14 @@ class Payment extends PureComponent {
   }
 
   componentDidMount = async () => {
+    console.log(this.props)
+    if (this.props.data != undefined && this.props.data) {
+      await this.setState({
+        TotalPricewithTax: this.props.data.TotalPricewithTax,
+        TotalPrice: this.props.data.TotalPrice,
+        itemsList: this.props.data.itemsList,
+      });
+    }
     setTimeout(
       function () {
         this.setState({ loading: false });

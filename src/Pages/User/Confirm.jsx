@@ -55,7 +55,14 @@ class BookingSummary extends PureComponent {
     console.log(this.props);
     var stepIndex = 2;
     console.log(stepIndex, "step");
-    handleNext(stepIndex, this.props);
+    var data = {
+      TotalPricewithTax: this.state.TotalPricewithTax,
+      TotalPrice: this.state.TotalPrice,
+      itemsList: this.state.itemsList,
+    };
+    console.log(stepIndex, "step");
+    handleNext(stepIndex, data, this.props);
+  
   };
   confirmback = async () => {
     const { handleBack } = this.props;

@@ -39,7 +39,8 @@ class Scan extends PureComponent {
       result: "No result",
       open: false,
       itemsList: [],
-      InVentryData:[]
+      InVentryData:[],
+      newScan:false
     };
   }
 
@@ -84,6 +85,8 @@ class Scan extends PureComponent {
       await this.setState({
         scannedItem: res.data.data,
         itemsList: [...this.state.itemsList, res.data.data[0]],
+        newScan:true
+
       });
       console.log("scanned")
       await this.proceed();
@@ -93,6 +96,7 @@ class Scan extends PureComponent {
       });
     }
     console.log(this.state);
+   this.forceUpdate();
   };
   handleScan = async (data) => {
     if (data) {
@@ -100,26 +104,34 @@ class Scan extends PureComponent {
         result: data,
       });
     }
- 
-   if (this.state.result != "No result" && data != null) {
+console.log(this.state.newScan)
+ if(this.state.newScan === false){
+  if (this.state.result != "No result" && data != null) {
     await this.getInventryData();
+    // var accessItem = this.state.InVentryData.includes(code => code.Itemnumber === Number(this.state.result));
+    // // var accessItem= this.state.InventryData.includes(Number(this.state.result))
+    // console.log(accessItem,"itttttttt")
     this.state.InVentryData.map(rr => {
       console.log(rr.Itemnumber ,Number(this.state.result),rr.Itemnumber ==Number(this.state.result))
       if(rr.Itemnumber === Number(this.state.result)){
-        this.props.enqueueSnackbar("Product Scanned !!", options, 500);
+        this.props.enqueueSnackbar("Product Scanned !!", options, 50);
          return this.getItemByItemNumber();
+       
       }
       else if (rr.Itemnumber != Number(this.state.result)){
-       return this.props.enqueueSnackbar("Scanned  Invalid Product!!", Eoptions, 500);
+        console.log(this.state.newScan)
+        if(this.state.newScan === true) {
+          return this.props.enqueueSnackbar("Scanned  Invalid Product!!", Eoptions, 50);
+        }
+      
+      //  return this.getItemByItemNumber();
         // window.location.reload("/scan")
       }
     })
   
     // if(this.state.InVentryData.includes(rr))
   }
- 
-
-   
+ }
   };
   proceed = () => {
     console.log(this.state.itemsList,this.state.scannedItem);
@@ -195,9 +207,9 @@ class Scan extends PureComponent {
                   delay={300}
                   onError={this.handleError}
                   onScan={this.handleScan}
-                  style={{ width: "60%", margin: "0 auto" }}
+                  style={{ width: "60%", margin: "3rem auto" }}
                 />
-                {/* <p class="blinking"> Scanned Result :{this.state.result}</p> */}
+                <p class="blinking"> Scanned Result :{this.state.result}</p>
                 <div class="txtcode">SCAN A BARCODE OR SIGNAGE QR CODE</div>
                 <div class="info" id="">
                   {" "}

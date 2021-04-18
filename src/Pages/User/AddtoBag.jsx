@@ -56,7 +56,7 @@ class AddtoBag extends PureComponent {
       ItemNumber: "",
       itemsList: [],
       scannedItem: [],
-      addedtobag:false
+      addedtobag: false
     };
   }
 
@@ -85,7 +85,7 @@ class AddtoBag extends PureComponent {
     //   500
     // );
     await this.setState({
-      addedtobag:true
+      addedtobag: true
     })
     // await this.addtocart();
   };
@@ -119,7 +119,7 @@ class AddtoBag extends PureComponent {
   };
 
   render() {
-    const { data, loading, checked, scannedItem ,addedtobag,itemsList} = this.state;
+    const { data, loading, checked, scannedItem, addedtobag, itemsList } = this.state;
     console.log(this.state);
     return (
       <Fragment>
@@ -130,7 +130,7 @@ class AddtoBag extends PureComponent {
               <NavBar />
             </div>
             <div className="mobileedit-nav">
-            <a href="/scan">  <i class="fas fa-arrow-circle-left lefticon addbagicon"></i></a>
+              <a href="/scan">  <i class="fas fa-arrow-circle-left lefticon addbagicon"></i></a>
               <IconButton aria-label="cart" className="bagbadge" onClick={this.addtocart}>
                 <StyledBadge badgeContent={itemsList.length} color="secondary">
                   <ShoppingCartIcon className="shopping" />
@@ -176,14 +176,16 @@ class AddtoBag extends PureComponent {
                   <div class="item-pdt">
                     {" "}
                     <img src={success} class="success" />
-                    <span>Product Added to you Cart !</span>
+                    <span>Product Added to your Cart !</span>
+                  </div>
+                }
+                {!addedtobag &&
+                  <div class="added-to-bag" onClick={this.addtobag}>
+                    {" "}
+                    <Link class="cartlink">ADD TO BAG</Link>
                   </div>
                 }
 
-                <div class="added-to-bag" onClick={this.addtobag}>
-                  {" "}
-                  <Link class="cartlink">ADD TO BAG</Link>
-                </div>
               </div>
             ))}
 
