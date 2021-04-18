@@ -184,6 +184,18 @@ body {
     height: 47vh;
     width: 56vh;
 }
+.shopright{
+      margin-left: -40px;
+    margin-right: 56px;
+}
+.pl-item{
+  margin-top: 3px;
+  margin-right: -2px;
+}
+.sl-item{
+  margin-top: 7px;
+  margin-right: -37px;
+}
   .side-nav {
     width: 99%;
   }
@@ -198,7 +210,7 @@ body {
   }
   .headerIcon {
     margin-top: -52px;
-    width: 141% !important;
+    width: 99% !important;
     margin-left: 1rem !important;
   }
   .card-header {
