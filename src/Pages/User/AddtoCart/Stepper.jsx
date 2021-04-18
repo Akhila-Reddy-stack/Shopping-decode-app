@@ -302,7 +302,7 @@ class HorizontalLabelPositionBelowStepper extends PureComponent {
             handleNext={this.handleNext}
             handleBack={this.handleBack}
             props={this.props}
-            data={data}
+            data={this.state.data}
             userId={this.state.userId}
           />
         );
@@ -314,7 +314,7 @@ class HorizontalLabelPositionBelowStepper extends PureComponent {
             handleNext={this.handleNext}
             handleBack={this.handleBack}
             props={this.props}
-            data={data}
+            data={this.state.data}
             userId={this.state.userId}
           />
         );
