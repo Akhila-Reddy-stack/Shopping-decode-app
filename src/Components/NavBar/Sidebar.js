@@ -140,19 +140,14 @@ class SideNav extends React.Component {
           <div class="r-icons">
             <ul class="r-icons mx-auto">
               <li class="nav-item"></li>
-              <li class="nav-item">
+              <li class="nav-item pl-item">
                 <a class="nav-link">
                   <RoomIcon className="marRight" />
                 </a>
                 <br />
                 <div class="place">Chennai</div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <PersonIcon className="marRight" />
-                </a>
-              </li>
-              <li class="nav-item">
+              <li class="nav-item sl-item">
                 {/* <a class="nav-link" href="#"> */}
 
                 <i
@@ -165,10 +160,16 @@ class SideNav extends React.Component {
                 {/* </a> */}
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <PersonIcon className="marRight" />
+                </a>
+              </li>
+            
+              <li class="nav-item">
                 <a class="nav-link" href="hotel">
                   <Link to="/cart" className="cartlink">
                     {" "}
-                    <ShoppingCartIcon className="marRight" />{" "}
+                    <ShoppingCartIcon className="marRight shopright" />{" "}
                   </Link>
                   <div></div>
                   <br />
