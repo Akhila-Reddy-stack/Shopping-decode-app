@@ -1,4 +1,4 @@
 {
-    "apiUrl1": "https://shopping-cartapi.herokuapp.com",
-    "apiUrl": "http://localhost:5001"
+    "apiUrl": "https://shopping-cartapi.herokuapp.com",
+    "apiUrl1": "http://localhost:5001"
 }
