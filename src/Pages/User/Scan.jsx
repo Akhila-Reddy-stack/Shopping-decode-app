@@ -11,7 +11,7 @@ import pin from "../../Images/user/pin.png";
 import "react-responsive-modal/styles.css";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import { getItemList, getItemByItemNumber } from "../../Services/UserCart";
-import {  getInventryData } from "../../Services/scan";
+import { getInventryData } from "../../Services/scan";
 
 const options = {
   variant: "success",
@@ -39,8 +39,8 @@ class Scan extends PureComponent {
       result: "No result",
       open: false,
       itemsList: [],
-      InVentryData:[],
-      newScan:false
+      InVentryData: [],
+      newScan: false
     };
   }
 
@@ -62,13 +62,13 @@ class Scan extends PureComponent {
   getInventryData = async () => {
     const res = await getInventryData();
     console.log(res)
-    if(res.data.status === true ){
+    if (res.data.status === true) {
       await this.setState({
-        InVentryData:res.data.data
+        InVentryData: res.data.data
       })
-    }else{
+    } else {
       await this.setState({
-        InVentryData:[]
+        InVentryData: []
       })
     }
 
@@ -85,7 +85,7 @@ class Scan extends PureComponent {
       await this.setState({
         scannedItem: res.data.data,
         itemsList: [...this.state.itemsList, res.data.data[0]],
-        newScan:true
+        newScan: true
 
       });
       console.log("scanned")
@@ -96,7 +96,7 @@ class Scan extends PureComponent {
       });
     }
     console.log(this.state);
-   this.forceUpdate();
+    this.forceUpdate();
   };
   handleScan = async (data) => {
     if (data) {
@@ -104,38 +104,51 @@ class Scan extends PureComponent {
         result: data,
       });
     }
-console.log(this.state.newScan)
- if(this.state.newScan === false){
-  if (this.state.result != "No result" && data != null) {
-    await this.getInventryData();
-    // var accessItem = this.state.InVentryData.includes(code => code.Itemnumber === Number(this.state.result));
-    // // var accessItem= this.state.InventryData.includes(Number(this.state.result))
-    // console.log(accessItem,"itttttttt")
-    this.state.InVentryData.map(rr => {
-      console.log(rr.Itemnumber ,Number(this.state.result),rr.Itemnumber ==Number(this.state.result))
-      if(rr.Itemnumber === Number(this.state.result)){
-        this.props.enqueueSnackbar("Product Scanned !!", options, 50);
-         return this.getItemByItemNumber();
-       
-      }
-      else if (rr.Itemnumber != Number(this.state.result)){
-        console.log(this.state.newScan)
-        if(this.state.newScan === true) {
+    console.log(this.state.newScan)
+    if (this.state.newScan === false) {
+      if (this.state.result != "No result" && data != null) {
+        await this.getInventryData();
+        // var accessItem = this.state.InVentryData.includes(code => code.Itemnumber === Number(this.state.result));
+        // // var accessItem= this.state.InventryData.includes(Number(this.state.result))
+        // console.log(accessItem,"itttttttt")
+        var result = this.state.result;
+        const valid = this.state.InVentryData.some(function (el) {
+          return el.Itemnumber === Number(result);
+        });
+        console.log(valid)
+        if(valid === true){
+          this.props.enqueueSnackbar("Product Scanned !!", options, 50);
+             return this.getItemByItemNumber();
+        }  
+        else if(valid === false){
           return this.props.enqueueSnackbar("Scanned  Invalid Product!!", Eoptions, 50);
         }
-      
-      //  return this.getItemByItemNumber();
-        // window.location.reload("/scan")
+
+
+        // this.state.InVentryData.map(rr => {
+        //   console.log(rr.Itemnumber ,Number(this.state.result),rr.Itemnumber ==Number(this.state.result))
+        //   if(rr.Itemnumber === Number(this.state.result)){
+        //     this.props.enqueueSnackbar("Product Scanned !!", options, 50);
+        //      return this.getItemByItemNumber();
+
+        //   }
+        //   else if (rr.Itemnumber != Number(this.state.result)){
+        //     console.log(this.state.newScan)
+        //     if(this.state.newScan === true) {
+        //       return this.props.enqueueSnackbar("Scanned  Invalid Product!!", Eoptions, 50);
+        //     }
+        //   //  return this.getItemByItemNumber();
+        //     // window.location.reload("/scan")
+        //   }
+        // })
+
+        // if(this.state.InVentryData.includes(rr))
       }
-    })
-  
-    // if(this.state.InVentryData.includes(rr))
-  }
- }
+    }
   };
   proceed = () => {
-    console.log(this.state.itemsList,this.state.scannedItem);
-    if(this.state.scannedItem?.length != 0 && this.state.scannedItem != undefined){
+    console.log(this.state.itemsList, this.state.scannedItem);
+    if (this.state.scannedItem?.length != 0 && this.state.scannedItem != undefined) {
       this.props.history.push({
         pathname: `/addtobag`,
         state: {
@@ -144,10 +157,10 @@ console.log(this.state.newScan)
         },
       });
     }
-    else if (this.state.scannedItem?.length === 0 || this.state.scannedItem == undefined ){
+    else if (this.state.scannedItem?.length === 0 || this.state.scannedItem == undefined) {
       this.props.enqueueSnackbar("Something went wrong!!", Eoptions, 500);
     }
-    
+
   };
   handleError = (err) => {
     console.error(err);
@@ -269,7 +282,7 @@ console.log(this.state.newScan)
                       </Button>
                     </Col>
                     <Col md={6}>
-                      <Button type="submit" className="btn-primary Proceed-btn"  onClick={this.proceed}>
+                      <Button type="submit" className="btn-primary Proceed-btn" onClick={this.proceed}>
                         <Link
                           className=""
                           to="/addtobag"

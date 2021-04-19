@@ -118,6 +118,16 @@ class AddtoBag extends PureComponent {
     }
   };
 
+  handleBack = () => {
+    let { totalAmount, orderList, totalTax, OrderId } = this.state;
+    this.props.history.push({
+      pathname: `/user/home`,
+      state: {
+        itemsList: this.state.itemsList,
+        result: "No result",
+      },
+    });
+  };
   render() {
     const { data, loading, checked, scannedItem, addedtobag, itemsList } = this.state;
     console.log(this.state);
@@ -130,7 +140,7 @@ class AddtoBag extends PureComponent {
               <NavBar />
             </div>
             <div className="mobileedit-nav">
-              <a href="/scan">  <i class="fas fa-arrow-circle-left lefticon addbagicon"></i></a>
+              <i class="fas fa-arrow-circle-left lefticon addbagicon"  onClick={this.handleBack}></i>
               <IconButton aria-label="cart" className="bagbadge" onClick={this.addtocart}>
                 <StyledBadge badgeContent={itemsList.length} color="secondary">
                   <ShoppingCartIcon className="shopping" />
